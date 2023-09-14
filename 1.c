@@ -12,7 +12,13 @@ int main(){
 
     if (ano>=1896 && ano<=1929)
     {
-            if (ano%4 == 0){
+            if (ano == 1896)
+            {
+                printf("Os Jogos Olimpicos de Verao ocorreram no ano de %d, sendo a primeira edicao de Jogos olimpicos de verao da era moderna\n", ano);
+            }
+            
+
+            else if (ano%4 == 0){
                 printf("Os Jogos Olimpicos de Verao ocorreram no ano de %d.\n", ano);
             }
             else if(ano%4 != 0)
@@ -22,7 +28,7 @@ int main(){
       
     }
 
-    else if (ano%4 == 0 && ano >= 1896)
+    else if (ano%4 == 0 && ano > 1896)
     {
         printf("Os Jogos Olimpicos de Verao ocorreram no ano de %d.\n", ano);
     }
@@ -32,7 +38,7 @@ int main(){
     {
           if(r == 0)
     {
-        printf("Primeira copa do mundo, ocorreu no ano de %d\n", ano);
+        printf("A Copa do Mundo de Futebol ocorreu no ano de %d, sendo a primeira edicao da Copa do Mundo de Futebol\n", ano);
     }
 
     else if (resto == 0)
